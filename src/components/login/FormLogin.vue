@@ -58,6 +58,8 @@ import { Options, Vue } from "vue-class-component";
 import AlertCircleOutline from "vue-material-design-icons/AlertCircleOutline.vue";
 import { setCulqiToken } from "@/services/culqi/CulqiApi";
 import { useStore } from "vuex";
+import Swal, { SweetAlertOptions } from "sweetalert2";
+
 import LabeledInput from "../general/LabeledInput.vue";
 
 @Options({
@@ -102,6 +104,13 @@ export default class FormLogin extends Vue implements FormLoginData {
             "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjkwMDc4ODA4LCJleHAiOjE2OTAwODI0MDh9.5MIae7e3YzVzHS6xTdollTisZ5hZx-QNMuk1SlScNSg"
           );
           // go to main view
+          Swal.fire({
+            title: "Atención",
+            text: "Debido al bloqueo de CORS trabajaremos con datos de prueba.",
+            icon: "warning",
+            confirmButtonText: "Ok",
+          } as SweetAlertOptions);
+
           this.$router.push({ name: "main" });
         }
       }
