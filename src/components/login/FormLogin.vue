@@ -1,6 +1,6 @@
 <template>
   <section
-    class="h-3/5 lg:w-1/2 lg:h-screen w-full flex items-center justify-center"
+    class="h-3/5 lg:w-1/2 lg:h-screen w-full flex items-center justify-center bg-white"
   >
     <form
       @submit="
