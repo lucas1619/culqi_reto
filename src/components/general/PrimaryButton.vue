@@ -1,6 +1,6 @@
 <template>
   <button
-    :class="`bg-gray-900 text-white p-2 rounded-xl font-bold ${
+    :class="`bg-gray-900 text-white py-4 px-5 rounded-xl font-bold ${
       fullWidth ? 'w-full' : ''
     }`"
     :type="type"

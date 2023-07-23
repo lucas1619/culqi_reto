@@ -3,8 +3,7 @@
     :class="`bg-white 
     text-gray-900 border 
     border-gray-900 
-    p-2 rounded-xl font-bold ${fullWidth ? 'w-full' : ''}
-    hover:bg-gray-900 hover:text-white transition-colors duration-500 
+    py-4 px-5 rounded-xl font-bold ${fullWidth ? 'w-full' : ''}
     `"
     :type="type"
   >
