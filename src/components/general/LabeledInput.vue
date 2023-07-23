@@ -1,7 +1,8 @@
 <template>
   <div class="mb-4">
     <label :for="id" class="block mb-2 text-sm text-gray-900"
-      >{{ label }}<span class="text-red-400" v-if="required">*</span></label
+      >{{ label
+      }}<span class="text-red-400 ml-1" v-if="required">*</span></label
     >
     <input
       :type="type"

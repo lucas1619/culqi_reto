@@ -34,12 +34,7 @@
         <AlertCircleOutline />
         <span class="ml-3">{{ errorMessage }}</span>
       </div>
-      <button
-        class="bg-gray-900 text-white w-full p-2 rounded-xl"
-        type="submit"
-      >
-        Iniciar sesión
-      </button>
+      <PrimaryButton type="submit" full-width> Iniciar sesión </PrimaryButton>
     </form>
   </section>
 </template>
@@ -59,6 +54,7 @@ import AlertCircleOutline from "vue-material-design-icons/AlertCircleOutline.vue
 import { setCulqiToken } from "@/services/culqi/CulqiApi";
 import { useStore } from "vuex";
 import Swal, { SweetAlertOptions } from "sweetalert2";
+import PrimaryButton from "../general/PrimaryButton.vue";
 
 import LabeledInput from "../general/LabeledInput.vue";
 
@@ -66,6 +62,7 @@ import LabeledInput from "../general/LabeledInput.vue";
   components: {
     AlertCircleOutline,
     LabeledInput,
+    PrimaryButton,
   },
 })
 export default class FormLogin extends Vue implements FormLoginData {
@@ -118,9 +115,3 @@ export default class FormLogin extends Vue implements FormLoginData {
   }
 }
 </script>
-
-<style scoped>
-label {
-  font-size: 14px;
-}
-</style>
