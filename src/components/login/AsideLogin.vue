@@ -5,7 +5,7 @@
     <div class="image-container lg:block hidden"></div>
     <div class="p-8">
       <img :src="require('@/assets/logo.png')" alt="Logo Culqui" class="mb-4" />
-      <p class="power mb-4 text-4xl">
+      <p class="power mb-4 text-4xl lg:text-5xl">
         Dale más power ⚡ a tus empleados hoy 💪
       </p>
       <p class="help text-lg">
