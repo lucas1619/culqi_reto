@@ -9,6 +9,16 @@ export class CulqiApi extends Api {
       // eslint-disable-next-line @typescript-eslint/no-this-alias
       singleton = this;
     }
+    //get culqiToken from localStorage
+    const culqiToken = localStorage.getItem("culqiToken");
+    if (culqiToken) {
+      singleton.setHeader("Authorization", `Bearer ${culqiToken}`);
+    }
     return singleton;
   }
 }
+
+export const setCulqiToken = (token: string) => {
+  const api = new CulqiApi();
+  api.setHeader("Authorization", `Bearer ${token}`);
+};
