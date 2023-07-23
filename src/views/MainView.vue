@@ -9,7 +9,10 @@
     </Transition>
     <div class="lg:w-4/5 w-full">
       <navbar @toggle-sidebar="toggleSidebar" />
-      <section class="bg-white mx-4 mt-5 rounded-2xl p-4">
+      <section
+        class="bg-white mx-4 mt-5 rounded-2xl p-4 overflow-hidden"
+        style="height: calc(100% - 80px - 2rem)"
+      >
         <section-header title="Empleados" subtitle="Gestiona tus empleados">
           <template v-slot:right-actions>
             <div class="flex">
