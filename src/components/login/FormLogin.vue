@@ -9,7 +9,7 @@
           send();
         }
       "
-      class="w-3/5"
+      class="lg:w-3/5 w-3/4"
     >
       <h1 class="text-2xl font-bold mb-4 text-center text-gray-900">
         Inicia sesión
