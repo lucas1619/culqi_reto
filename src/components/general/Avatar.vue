@@ -8,7 +8,6 @@
 
 <script lang="ts">
 import { Vue, Options, prop } from "vue-class-component";
-import { computed } from "vue";
 
 class Props {
   fullName: string = prop({
@@ -19,12 +18,12 @@ class Props {
 
 @Options({})
 export default class Avatar extends Vue.with(Props) {
-  initials = computed<string>(() =>
-    this.$props.fullName
+  get initials() {
+    return this.$props.fullName
       .split(" ")
       .map((n) => n[0])
-      .join("")
-  );
+      .join("");
+  }
 }
 </script>
 
