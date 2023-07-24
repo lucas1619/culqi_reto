@@ -4,7 +4,28 @@
       <aside
         class="hidden lg:block bg-white px-5 py-4 lg:border-r lg:border-gray-300 lg:w-1/5"
       >
-        gaaa
+        <div class="flex items-center justify-center">
+          <img :src="require('@/assets/logo-white.png')" alt="Logo Culqi" />
+        </div>
+        <nav class="mt-6">
+          <ul>
+            <router-link class="text-gray-900 font-bold text-sm" to="/" exact>
+              <li class="my-4 flex items-center">
+                <account-multiple-outline class="icon" />
+                Empleados
+              </li>
+            </router-link>
+            <router-link
+              class="text-gray-900 font-bold text-sm"
+              to="/recuitment"
+              exact
+            >
+              <li class="my-4 flex items-center">
+                <briefcase-variant-outline class="icon" />Reclutamiento
+              </li>
+            </router-link>
+          </ul>
+        </nav>
       </aside>
     </Transition>
     <div class="lg:w-4/5 w-full">
@@ -44,340 +65,45 @@
             </div>
           </div>
           <div class="overflow-auto h-2/5 lg:h-3/5">
-            <table class="w-full text-sm text-left text-gray-500">
-              <thead class="text-xs text-gray-600 uppercase bg-gray-50">
-                <tr class="normal-case">
-                  <th scope="col" class="p-4">Nombre</th>
-                  <th scope="col" class="p-4">Nombre cargo</th>
-                  <th scope="col" class="p-4">Departamento</th>
-                  <th scope="col" class="p-4">Oficina</th>
-                  <th scope="col" class="p-4">Cuenta</th>
-                  <th scope="col" class="p-4 text-right">Acciones</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="bg-white border-b text-gray-900 text-xs">
-                  <th scope="row" class="py-3.5 px-4">
-                    <p class="font-medium">Pristia Candra</p>
-                    <p
-                      class="font-normal text-gray-500"
-                      style="font-size: 10px"
-                    >
-                      lincoln@unpixel.com
-                    </p>
-                  </th>
-                  <td class="py-3.5 px-4">UI UX Designer</td>
-                  <td class="py-3.5 px-4">Team Product</td>
-                  <td class="py-3.5 px-4">Unpixel Office</td>
-                  <td class="py-3.5 px-4">Activada</td>
-                  <td class="py-3.5 px-4 flex items-center justify-end">
-                    <button
-                      class="w-8 h-8 rounded-lg bg-green-500 text-white mr-2.5 flex items-center justify-center"
-                    >
-                      <eye-outline :size="16" />
-                    </button>
-                    <button
-                      class="w-8 h-8 rounded-lg bg-blue-500 text-white mr-2.5 flex items-center justify-center"
-                    >
-                      <pencil-outline :size="16" />
-                    </button>
-                    <button
-                      class="w-8 h-8 rounded-lg bg-red-500 text-white flex items-center justify-center"
-                    >
-                      <trash-can-outline :size="16" />
-                    </button>
-                  </td>
-                </tr>
-                <tr class="bg-white border-b text-gray-900 text-xs">
-                  <th scope="row" class="py-3.5 px-4">
-                    <p class="font-medium">Pristia Candra</p>
-                    <p
-                      class="font-normal text-gray-500"
-                      style="font-size: 10px"
-                    >
-                      lincoln@unpixel.com
-                    </p>
-                  </th>
-                  <td class="py-3.5 px-4">UI UX Designer</td>
-                  <td class="py-3.5 px-4">Team Product</td>
-                  <td class="py-3.5 px-4">Unpixel Office</td>
-                  <td class="py-3.5 px-4">Activada</td>
-                  <td class="py-3.5 px-4 flex items-center justify-end">
-                    <button
-                      class="w-8 h-8 rounded-lg bg-green-500 text-white mr-2.5 flex items-center justify-center"
-                    >
-                      <eye-outline :size="16" />
-                    </button>
-                    <button
-                      class="w-8 h-8 rounded-lg bg-blue-500 text-white mr-2.5 flex items-center justify-center"
-                    >
-                      <pencil-outline :size="16" />
-                    </button>
-                    <button
-                      class="w-8 h-8 rounded-lg bg-red-500 text-white flex items-center justify-center"
-                    >
-                      <trash-can-outline :size="16" />
-                    </button>
-                  </td>
-                </tr>
-                <tr class="bg-white border-b text-gray-900 text-xs">
-                  <th scope="row" class="py-3.5 px-4">
-                    <p class="font-medium">Pristia Candra</p>
-                    <p
-                      class="font-normal text-gray-500"
-                      style="font-size: 10px"
-                    >
-                      lincoln@unpixel.com
-                    </p>
-                  </th>
-                  <td class="py-3.5 px-4">UI UX Designer</td>
-                  <td class="py-3.5 px-4">Team Product</td>
-                  <td class="py-3.5 px-4">Unpixel Office</td>
-                  <td class="py-3.5 px-4">Activada</td>
-                  <td class="py-3.5 px-4 flex items-center justify-end">
-                    <button
-                      class="w-8 h-8 rounded-lg bg-green-500 text-white mr-2.5 flex items-center justify-center"
-                    >
-                      <eye-outline :size="16" />
-                    </button>
-                    <button
-                      class="w-8 h-8 rounded-lg bg-blue-500 text-white mr-2.5 flex items-center justify-center"
-                    >
-                      <pencil-outline :size="16" />
-                    </button>
-                    <button
-                      class="w-8 h-8 rounded-lg bg-red-500 text-white flex items-center justify-center"
-                    >
-                      <trash-can-outline :size="16" />
-                    </button>
-                  </td>
-                </tr>
-                <tr class="bg-white border-b text-gray-900 text-xs">
-                  <th scope="row" class="py-3.5 px-4">
-                    <p class="font-medium">Pristia Candra</p>
-                    <p
-                      class="font-normal text-gray-500"
-                      style="font-size: 10px"
-                    >
-                      lincoln@unpixel.com
-                    </p>
-                  </th>
-                  <td class="py-3.5 px-4">UI UX Designer</td>
-                  <td class="py-3.5 px-4">Team Product</td>
-                  <td class="py-3.5 px-4">Unpixel Office</td>
-                  <td class="py-3.5 px-4">Activada</td>
-                  <td class="py-3.5 px-4 flex items-center justify-end">
-                    <button
-                      class="w-8 h-8 rounded-lg bg-green-500 text-white mr-2.5 flex items-center justify-center"
-                    >
-                      <eye-outline :size="16" />
-                    </button>
-                    <button
-                      class="w-8 h-8 rounded-lg bg-blue-500 text-white mr-2.5 flex items-center justify-center"
-                    >
-                      <pencil-outline :size="16" />
-                    </button>
-                    <button
-                      class="w-8 h-8 rounded-lg bg-red-500 text-white flex items-center justify-center"
-                    >
-                      <trash-can-outline :size="16" />
-                    </button>
-                  </td>
-                </tr>
-                <tr class="bg-white border-b text-gray-900 text-xs">
-                  <th scope="row" class="py-3.5 px-4">
-                    <p class="font-medium">Pristia Candra</p>
-                    <p
-                      class="font-normal text-gray-500"
-                      style="font-size: 10px"
-                    >
-                      lincoln@unpixel.com
-                    </p>
-                  </th>
-                  <td class="py-3.5 px-4">UI UX Designer</td>
-                  <td class="py-3.5 px-4">Team Product</td>
-                  <td class="py-3.5 px-4">Unpixel Office</td>
-                  <td class="py-3.5 px-4">Activada</td>
-                  <td class="py-3.5 px-4 flex items-center justify-end">
-                    <button
-                      class="w-8 h-8 rounded-lg bg-green-500 text-white mr-2.5 flex items-center justify-center"
-                    >
-                      <eye-outline :size="16" />
-                    </button>
-                    <button
-                      class="w-8 h-8 rounded-lg bg-blue-500 text-white mr-2.5 flex items-center justify-center"
-                    >
-                      <pencil-outline :size="16" />
-                    </button>
-                    <button
-                      class="w-8 h-8 rounded-lg bg-red-500 text-white flex items-center justify-center"
-                    >
-                      <trash-can-outline :size="16" />
-                    </button>
-                  </td>
-                </tr>
-                <tr class="bg-white border-b text-gray-900 text-xs">
-                  <th scope="row" class="py-3.5 px-4">
-                    <p class="font-medium">Pristia Candra</p>
-                    <p
-                      class="font-normal text-gray-500"
-                      style="font-size: 10px"
-                    >
-                      lincoln@unpixel.com
-                    </p>
-                  </th>
-                  <td class="py-3.5 px-4">UI UX Designer</td>
-                  <td class="py-3.5 px-4">Team Product</td>
-                  <td class="py-3.5 px-4">Unpixel Office</td>
-                  <td class="py-3.5 px-4">Activada</td>
-                  <td class="py-3.5 px-4 flex items-center justify-end">
-                    <button
-                      class="w-8 h-8 rounded-lg bg-green-500 text-white mr-2.5 flex items-center justify-center"
-                    >
-                      <eye-outline :size="16" />
-                    </button>
-                    <button
-                      class="w-8 h-8 rounded-lg bg-blue-500 text-white mr-2.5 flex items-center justify-center"
-                    >
-                      <pencil-outline :size="16" />
-                    </button>
-                    <button
-                      class="w-8 h-8 rounded-lg bg-red-500 text-white flex items-center justify-center"
-                    >
-                      <trash-can-outline :size="16" />
-                    </button>
-                  </td>
-                </tr>
-                <tr class="bg-white border-b text-gray-900 text-xs">
-                  <th scope="row" class="py-3.5 px-4">
-                    <p class="font-medium">Pristia Candra</p>
-                    <p
-                      class="font-normal text-gray-500"
-                      style="font-size: 10px"
-                    >
-                      lincoln@unpixel.com
-                    </p>
-                  </th>
-                  <td class="py-3.5 px-4">UI UX Designer</td>
-                  <td class="py-3.5 px-4">Team Product</td>
-                  <td class="py-3.5 px-4">Unpixel Office</td>
-                  <td class="py-3.5 px-4">Activada</td>
-                  <td class="py-3.5 px-4 flex items-center justify-end">
-                    <button
-                      class="w-8 h-8 rounded-lg bg-green-500 text-white mr-2.5 flex items-center justify-center"
-                    >
-                      <eye-outline :size="16" />
-                    </button>
-                    <button
-                      class="w-8 h-8 rounded-lg bg-blue-500 text-white mr-2.5 flex items-center justify-center"
-                    >
-                      <pencil-outline :size="16" />
-                    </button>
-                    <button
-                      class="w-8 h-8 rounded-lg bg-red-500 text-white flex items-center justify-center"
-                    >
-                      <trash-can-outline :size="16" />
-                    </button>
-                  </td>
-                </tr>
-                <tr class="bg-white border-b text-gray-900 text-xs">
-                  <th scope="row" class="py-3.5 px-4">
-                    <p class="font-medium">Pristia Candra</p>
-                    <p
-                      class="font-normal text-gray-500"
-                      style="font-size: 10px"
-                    >
-                      lincoln@unpixel.com
-                    </p>
-                  </th>
-                  <td class="py-3.5 px-4">UI UX Designer</td>
-                  <td class="py-3.5 px-4">Team Product</td>
-                  <td class="py-3.5 px-4">Unpixel Office</td>
-                  <td class="py-3.5 px-4">Activada</td>
-                  <td class="py-3.5 px-4 flex items-center justify-end">
-                    <button
-                      class="w-8 h-8 rounded-lg bg-green-500 text-white mr-2.5 flex items-center justify-center"
-                    >
-                      <eye-outline :size="16" />
-                    </button>
-                    <button
-                      class="w-8 h-8 rounded-lg bg-blue-500 text-white mr-2.5 flex items-center justify-center"
-                    >
-                      <pencil-outline :size="16" />
-                    </button>
-                    <button
-                      class="w-8 h-8 rounded-lg bg-red-500 text-white flex items-center justify-center"
-                    >
-                      <trash-can-outline :size="16" />
-                    </button>
-                  </td>
-                </tr>
-                <tr class="bg-white border-b text-gray-900 text-xs">
-                  <th scope="row" class="py-3.5 px-4">
-                    <p class="font-medium">Pristia Candra</p>
-                    <p
-                      class="font-normal text-gray-500"
-                      style="font-size: 10px"
-                    >
-                      lincoln@unpixel.com
-                    </p>
-                  </th>
-                  <td class="py-3.5 px-4">UI UX Designer</td>
-                  <td class="py-3.5 px-4">Team Product</td>
-                  <td class="py-3.5 px-4">Unpixel Office</td>
-                  <td class="py-3.5 px-4">Activada</td>
-                  <td class="py-3.5 px-4 flex items-center justify-end">
-                    <button
-                      class="w-8 h-8 rounded-lg bg-green-500 text-white mr-2.5 flex items-center justify-center"
-                    >
-                      <eye-outline :size="16" />
-                    </button>
-                    <button
-                      class="w-8 h-8 rounded-lg bg-blue-500 text-white mr-2.5 flex items-center justify-center"
-                    >
-                      <pencil-outline :size="16" />
-                    </button>
-                    <button
-                      class="w-8 h-8 rounded-lg bg-red-500 text-white flex items-center justify-center"
-                    >
-                      <trash-can-outline :size="16" />
-                    </button>
-                  </td>
-                </tr>
-                <tr class="bg-white border-b text-gray-900 text-xs">
-                  <th scope="row" class="py-3.5 px-4">
-                    <p class="font-medium">Pristia Candra</p>
-                    <p
-                      class="font-normal text-gray-500"
-                      style="font-size: 10px"
-                    >
-                      lincoln@unpixel.com
-                    </p>
-                  </th>
-                  <td class="py-3.5 px-4">UI UX Designer</td>
-                  <td class="py-3.5 px-4">Team Product</td>
-                  <td class="py-3.5 px-4">Unpixel Office</td>
-                  <td class="py-3.5 px-4">Activada</td>
-                  <td class="py-3.5 px-4 flex items-center justify-end">
-                    <button
-                      class="w-8 h-8 rounded-lg bg-green-500 text-white mr-2.5 flex items-center justify-center"
-                    >
-                      <eye-outline :size="16" />
-                    </button>
-                    <button
-                      class="w-8 h-8 rounded-lg bg-blue-500 text-white mr-2.5 flex items-center justify-center"
-                    >
-                      <pencil-outline :size="16" />
-                    </button>
-                    <button
-                      class="w-8 h-8 rounded-lg bg-red-500 text-white flex items-center justify-center"
-                    >
-                      <trash-can-outline :size="16" />
-                    </button>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <Table :rows="users" :columns="columns">
+              <template #row(name)="{ row }">
+                <p class="font-medium">{{ row.nombre }}</p>
+                <p class="font-normal text-gray-500" style="font-size: 10px">
+                  {{ row.correo }}
+                </p>
+              </template>
+              <template #row(cargo)="{ row }">
+                {{ row.cargo }}
+              </template>
+              <template #row(departamento)="{ row }">
+                {{ row.departamento }}
+              </template>
+              <template #row(oficina)="{ row }">
+                {{ row.oficina }}
+              </template>
+              <template #row(cuenta)="{ row }">
+                {{ row.estadoCuenta }}
+              </template>
+              <template #row(acciones)>
+                <div class="flex items-center justify-end">
+                  <button
+                    class="w-8 h-8 rounded-lg bg-green-500 text-white mr-2.5 flex items-center justify-center"
+                  >
+                    <eye-outline :size="16" />
+                  </button>
+                  <button
+                    class="w-8 h-8 rounded-lg bg-blue-500 text-white mr-2.5 flex items-center justify-center"
+                  >
+                    <pencil-outline :size="16" />
+                  </button>
+                  <button
+                    class="w-8 h-8 rounded-lg bg-red-500 text-white flex items-center justify-center"
+                  >
+                    <trash-can-outline :size="16" />
+                  </button>
+                </div>
+              </template>
+            </Table>
           </div>
           <div
             class="mt-6 flex flex-col items-end lg:flex-row lg:items-center lg:justify-between"
@@ -417,10 +143,16 @@ import Plus from "vue-material-design-icons/Plus.vue";
 import FileDownloadOutline from "vue-material-design-icons/FileDownloadOutline.vue";
 import Pagination from "@/components/general/Pagination.vue";
 import Input from "@/components/general/Input.vue";
+import Table from "@/components/general/Table.vue";
+import { User } from "@/models/user";
+
+import { RouterLink } from "vue-router";
+import AccountMultipleOutline from "vue-material-design-icons/AccountMultipleOutline.vue";
+import BriefcaseVariantOutline from "vue-material-design-icons/BriefcaseVariantOutline.vue";
+
 import EyeOutline from "vue-material-design-icons/EyeOutline.vue";
 import PencilOutline from "vue-material-design-icons/PencilOutline.vue";
 import TrashCanOutline from "vue-material-design-icons/TrashCanOutline.vue";
-
 @Options({
   components: {
     Avatar,
@@ -432,6 +164,10 @@ import TrashCanOutline from "vue-material-design-icons/TrashCanOutline.vue";
     SectionHeader,
     Input,
     Pagination,
+    RouterLink,
+    AccountMultipleOutline,
+    BriefcaseVariantOutline,
+    Table,
     EyeOutline,
     PencilOutline,
     TrashCanOutline,
@@ -444,5 +180,136 @@ export default class MainView extends Vue {
     console.log("toggleSidebar");
     this.openSidebar = !this.openSidebar;
   }
+  users = [
+    {
+      id: 287,
+      nombre: "GIAWn",
+      correo: "GIAWn@example.com",
+      cargo: "wTfFqFlV",
+      departamento: "uQFCbJ",
+      oficina: "Rbsm",
+      estadoCuenta: "inactivo",
+    },
+    {
+      id: 521,
+      nombre: "UuTLR",
+      correo: "UuTLR@example.com",
+      cargo: "tHQrGweF",
+      departamento: "FotyIf",
+      oficina: "VCGB",
+      estadoCuenta: "activo",
+    },
+    {
+      id: 413,
+      nombre: "yKRzS",
+      correo: "yKRzS@example.com",
+      cargo: "qGvNmUBc",
+      departamento: "JlKLXs",
+      oficina: "xzAp",
+      estadoCuenta: "pendiente",
+    },
+    {
+      id: 677,
+      nombre: "YwzQa",
+      correo: "YwzQa@example.com",
+      cargo: "CNbuvJkq",
+      departamento: "NRkXQa",
+      oficina: "ynfY",
+      estadoCuenta: "inactivo",
+    },
+    {
+      id: 837,
+      nombre: "jIYZc",
+      correo: "jIYZc@example.com",
+      cargo: "uOvlYbtE",
+      departamento: "FXsAYe",
+      oficina: "AXVD",
+      estadoCuenta: "inactivo",
+    },
+    {
+      id: 43,
+      nombre: "FQfrW",
+      correo: "FQfrW@example.com",
+      cargo: "cqZknmKj",
+      departamento: "NhKFwS",
+      oficina: "Hohz",
+      estadoCuenta: "activo",
+    },
+    {
+      id: 276,
+      nombre: "UoUXa",
+      correo: "UoUXa@example.com",
+      cargo: "xtZDdruX",
+      departamento: "kLEkeS",
+      oficina: "gBcK",
+      estadoCuenta: "inactivo",
+    },
+    {
+      id: 62,
+      nombre: "wRqVR",
+      correo: "wRqVR@example.com",
+      cargo: "aPHqDGQK",
+      departamento: "CjLVRv",
+      oficina: "mDdF",
+      estadoCuenta: "activo",
+    },
+    {
+      id: 504,
+      nombre: "UaINx",
+      correo: "UaINx@example.com",
+      cargo: "KKAPUOCq",
+      departamento: "pxoPVz",
+      oficina: "QtWo",
+      estadoCuenta: "pendiente",
+    },
+    {
+      id: 61,
+      nombre: "EzFkN",
+      correo: "EzFkN@example.com",
+      cargo: "sBlKCHMp",
+      departamento: "BYNZuY",
+      oficina: "bIqH",
+      estadoCuenta: "pendiente",
+    },
+  ] as User[];
+  columns = [
+    {
+      label: "Nombre",
+      key: "name",
+    },
+    {
+      label: "Nombre cargo",
+      key: "cargo",
+    },
+    {
+      label: "Departamento",
+      key: "departamento",
+    },
+    {
+      label: "Oficina",
+      key: "oficina",
+    },
+    {
+      label: "Cuenta",
+      key: "cuenta",
+    },
+    {
+      label: "Acciones",
+      key: "acciones",
+      headClasses: "text-right",
+    },
+  ];
 }
 </script>
+<style lang="css" scoped>
+.router-link-exact-active {
+  @apply text-cyan-500;
+}
+.router-link-exact-active .icon {
+  @apply text-cyan-500;
+}
+
+.icon {
+  @apply mr-2 text-gray-500;
+}
+</style>

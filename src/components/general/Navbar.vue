@@ -1,5 +1,5 @@
 <template>
-  <nav
+  <header
     class="bg-white border-b border-gray-300 px-5 py-4 flex items-center lg:justify-end justify-between"
   >
     <button @click.prevent="onButtonClick" class="lg:hidden">
@@ -11,7 +11,7 @@
         {{ fullName }}
       </span>
     </div>
-  </nav>
+  </header>
 </template>
 
 <script lang="ts">
