@@ -43,7 +43,7 @@
               </select>
             </div>
           </div>
-          <div class="overflow-auto h-1/2 lg:h-3/5">
+          <div class="overflow-auto h-2/5 lg:h-3/5">
             <table class="w-full text-sm text-left text-gray-500">
               <thead class="text-xs text-gray-600 uppercase bg-gray-50">
                 <tr class="normal-case">
@@ -70,12 +70,22 @@
                   <td class="py-3.5 px-4">Team Product</td>
                   <td class="py-3.5 px-4">Unpixel Office</td>
                   <td class="py-3.5 px-4">Activada</td>
-                  <td class="py-3.5 px-4 text-right">
-                    <a
-                      href="#"
-                      class="font-medium text-blue-600 hover:underline"
-                      >Edit</a
+                  <td class="py-3.5 px-4 flex items-center justify-end">
+                    <button
+                      class="w-8 h-8 rounded-lg bg-green-500 text-white mr-2.5 flex items-center justify-center"
                     >
+                      <eye-outline :size="16" />
+                    </button>
+                    <button
+                      class="w-8 h-8 rounded-lg bg-blue-500 text-white mr-2.5 flex items-center justify-center"
+                    >
+                      <pencil-outline :size="16" />
+                    </button>
+                    <button
+                      class="w-8 h-8 rounded-lg bg-red-500 text-white flex items-center justify-center"
+                    >
+                      <trash-can-outline :size="16" />
+                    </button>
                   </td>
                 </tr>
                 <tr class="bg-white border-b text-gray-900 text-xs">
@@ -92,12 +102,22 @@
                   <td class="py-3.5 px-4">Team Product</td>
                   <td class="py-3.5 px-4">Unpixel Office</td>
                   <td class="py-3.5 px-4">Activada</td>
-                  <td class="py-3.5 px-4 text-right">
-                    <a
-                      href="#"
-                      class="font-medium text-blue-600 hover:underline"
-                      >Edit</a
+                  <td class="py-3.5 px-4 flex items-center justify-end">
+                    <button
+                      class="w-8 h-8 rounded-lg bg-green-500 text-white mr-2.5 flex items-center justify-center"
                     >
+                      <eye-outline :size="16" />
+                    </button>
+                    <button
+                      class="w-8 h-8 rounded-lg bg-blue-500 text-white mr-2.5 flex items-center justify-center"
+                    >
+                      <pencil-outline :size="16" />
+                    </button>
+                    <button
+                      class="w-8 h-8 rounded-lg bg-red-500 text-white flex items-center justify-center"
+                    >
+                      <trash-can-outline :size="16" />
+                    </button>
                   </td>
                 </tr>
                 <tr class="bg-white border-b text-gray-900 text-xs">
@@ -114,12 +134,22 @@
                   <td class="py-3.5 px-4">Team Product</td>
                   <td class="py-3.5 px-4">Unpixel Office</td>
                   <td class="py-3.5 px-4">Activada</td>
-                  <td class="py-3.5 px-4 text-right">
-                    <a
-                      href="#"
-                      class="font-medium text-blue-600 hover:underline"
-                      >Edit</a
+                  <td class="py-3.5 px-4 flex items-center justify-end">
+                    <button
+                      class="w-8 h-8 rounded-lg bg-green-500 text-white mr-2.5 flex items-center justify-center"
                     >
+                      <eye-outline :size="16" />
+                    </button>
+                    <button
+                      class="w-8 h-8 rounded-lg bg-blue-500 text-white mr-2.5 flex items-center justify-center"
+                    >
+                      <pencil-outline :size="16" />
+                    </button>
+                    <button
+                      class="w-8 h-8 rounded-lg bg-red-500 text-white flex items-center justify-center"
+                    >
+                      <trash-can-outline :size="16" />
+                    </button>
                   </td>
                 </tr>
                 <tr class="bg-white border-b text-gray-900 text-xs">
@@ -136,12 +166,22 @@
                   <td class="py-3.5 px-4">Team Product</td>
                   <td class="py-3.5 px-4">Unpixel Office</td>
                   <td class="py-3.5 px-4">Activada</td>
-                  <td class="py-3.5 px-4 text-right">
-                    <a
-                      href="#"
-                      class="font-medium text-blue-600 hover:underline"
-                      >Edit</a
+                  <td class="py-3.5 px-4 flex items-center justify-end">
+                    <button
+                      class="w-8 h-8 rounded-lg bg-green-500 text-white mr-2.5 flex items-center justify-center"
                     >
+                      <eye-outline :size="16" />
+                    </button>
+                    <button
+                      class="w-8 h-8 rounded-lg bg-blue-500 text-white mr-2.5 flex items-center justify-center"
+                    >
+                      <pencil-outline :size="16" />
+                    </button>
+                    <button
+                      class="w-8 h-8 rounded-lg bg-red-500 text-white flex items-center justify-center"
+                    >
+                      <trash-can-outline :size="16" />
+                    </button>
                   </td>
                 </tr>
                 <tr class="bg-white border-b text-gray-900 text-xs">
@@ -158,12 +198,22 @@
                   <td class="py-3.5 px-4">Team Product</td>
                   <td class="py-3.5 px-4">Unpixel Office</td>
                   <td class="py-3.5 px-4">Activada</td>
-                  <td class="py-3.5 px-4 text-right">
-                    <a
-                      href="#"
-                      class="font-medium text-blue-600 hover:underline"
-                      >Edit</a
+                  <td class="py-3.5 px-4 flex items-center justify-end">
+                    <button
+                      class="w-8 h-8 rounded-lg bg-green-500 text-white mr-2.5 flex items-center justify-center"
                     >
+                      <eye-outline :size="16" />
+                    </button>
+                    <button
+                      class="w-8 h-8 rounded-lg bg-blue-500 text-white mr-2.5 flex items-center justify-center"
+                    >
+                      <pencil-outline :size="16" />
+                    </button>
+                    <button
+                      class="w-8 h-8 rounded-lg bg-red-500 text-white flex items-center justify-center"
+                    >
+                      <trash-can-outline :size="16" />
+                    </button>
                   </td>
                 </tr>
                 <tr class="bg-white border-b text-gray-900 text-xs">
@@ -180,16 +230,174 @@
                   <td class="py-3.5 px-4">Team Product</td>
                   <td class="py-3.5 px-4">Unpixel Office</td>
                   <td class="py-3.5 px-4">Activada</td>
-                  <td class="py-3.5 px-4 text-right">
-                    <a
-                      href="#"
-                      class="font-medium text-blue-600 hover:underline"
-                      >Edit</a
+                  <td class="py-3.5 px-4 flex items-center justify-end">
+                    <button
+                      class="w-8 h-8 rounded-lg bg-green-500 text-white mr-2.5 flex items-center justify-center"
                     >
+                      <eye-outline :size="16" />
+                    </button>
+                    <button
+                      class="w-8 h-8 rounded-lg bg-blue-500 text-white mr-2.5 flex items-center justify-center"
+                    >
+                      <pencil-outline :size="16" />
+                    </button>
+                    <button
+                      class="w-8 h-8 rounded-lg bg-red-500 text-white flex items-center justify-center"
+                    >
+                      <trash-can-outline :size="16" />
+                    </button>
+                  </td>
+                </tr>
+                <tr class="bg-white border-b text-gray-900 text-xs">
+                  <th scope="row" class="py-3.5 px-4">
+                    <p class="font-medium">Pristia Candra</p>
+                    <p
+                      class="font-normal text-gray-500"
+                      style="font-size: 10px"
+                    >
+                      lincoln@unpixel.com
+                    </p>
+                  </th>
+                  <td class="py-3.5 px-4">UI UX Designer</td>
+                  <td class="py-3.5 px-4">Team Product</td>
+                  <td class="py-3.5 px-4">Unpixel Office</td>
+                  <td class="py-3.5 px-4">Activada</td>
+                  <td class="py-3.5 px-4 flex items-center justify-end">
+                    <button
+                      class="w-8 h-8 rounded-lg bg-green-500 text-white mr-2.5 flex items-center justify-center"
+                    >
+                      <eye-outline :size="16" />
+                    </button>
+                    <button
+                      class="w-8 h-8 rounded-lg bg-blue-500 text-white mr-2.5 flex items-center justify-center"
+                    >
+                      <pencil-outline :size="16" />
+                    </button>
+                    <button
+                      class="w-8 h-8 rounded-lg bg-red-500 text-white flex items-center justify-center"
+                    >
+                      <trash-can-outline :size="16" />
+                    </button>
+                  </td>
+                </tr>
+                <tr class="bg-white border-b text-gray-900 text-xs">
+                  <th scope="row" class="py-3.5 px-4">
+                    <p class="font-medium">Pristia Candra</p>
+                    <p
+                      class="font-normal text-gray-500"
+                      style="font-size: 10px"
+                    >
+                      lincoln@unpixel.com
+                    </p>
+                  </th>
+                  <td class="py-3.5 px-4">UI UX Designer</td>
+                  <td class="py-3.5 px-4">Team Product</td>
+                  <td class="py-3.5 px-4">Unpixel Office</td>
+                  <td class="py-3.5 px-4">Activada</td>
+                  <td class="py-3.5 px-4 flex items-center justify-end">
+                    <button
+                      class="w-8 h-8 rounded-lg bg-green-500 text-white mr-2.5 flex items-center justify-center"
+                    >
+                      <eye-outline :size="16" />
+                    </button>
+                    <button
+                      class="w-8 h-8 rounded-lg bg-blue-500 text-white mr-2.5 flex items-center justify-center"
+                    >
+                      <pencil-outline :size="16" />
+                    </button>
+                    <button
+                      class="w-8 h-8 rounded-lg bg-red-500 text-white flex items-center justify-center"
+                    >
+                      <trash-can-outline :size="16" />
+                    </button>
+                  </td>
+                </tr>
+                <tr class="bg-white border-b text-gray-900 text-xs">
+                  <th scope="row" class="py-3.5 px-4">
+                    <p class="font-medium">Pristia Candra</p>
+                    <p
+                      class="font-normal text-gray-500"
+                      style="font-size: 10px"
+                    >
+                      lincoln@unpixel.com
+                    </p>
+                  </th>
+                  <td class="py-3.5 px-4">UI UX Designer</td>
+                  <td class="py-3.5 px-4">Team Product</td>
+                  <td class="py-3.5 px-4">Unpixel Office</td>
+                  <td class="py-3.5 px-4">Activada</td>
+                  <td class="py-3.5 px-4 flex items-center justify-end">
+                    <button
+                      class="w-8 h-8 rounded-lg bg-green-500 text-white mr-2.5 flex items-center justify-center"
+                    >
+                      <eye-outline :size="16" />
+                    </button>
+                    <button
+                      class="w-8 h-8 rounded-lg bg-blue-500 text-white mr-2.5 flex items-center justify-center"
+                    >
+                      <pencil-outline :size="16" />
+                    </button>
+                    <button
+                      class="w-8 h-8 rounded-lg bg-red-500 text-white flex items-center justify-center"
+                    >
+                      <trash-can-outline :size="16" />
+                    </button>
+                  </td>
+                </tr>
+                <tr class="bg-white border-b text-gray-900 text-xs">
+                  <th scope="row" class="py-3.5 px-4">
+                    <p class="font-medium">Pristia Candra</p>
+                    <p
+                      class="font-normal text-gray-500"
+                      style="font-size: 10px"
+                    >
+                      lincoln@unpixel.com
+                    </p>
+                  </th>
+                  <td class="py-3.5 px-4">UI UX Designer</td>
+                  <td class="py-3.5 px-4">Team Product</td>
+                  <td class="py-3.5 px-4">Unpixel Office</td>
+                  <td class="py-3.5 px-4">Activada</td>
+                  <td class="py-3.5 px-4 flex items-center justify-end">
+                    <button
+                      class="w-8 h-8 rounded-lg bg-green-500 text-white mr-2.5 flex items-center justify-center"
+                    >
+                      <eye-outline :size="16" />
+                    </button>
+                    <button
+                      class="w-8 h-8 rounded-lg bg-blue-500 text-white mr-2.5 flex items-center justify-center"
+                    >
+                      <pencil-outline :size="16" />
+                    </button>
+                    <button
+                      class="w-8 h-8 rounded-lg bg-red-500 text-white flex items-center justify-center"
+                    >
+                      <trash-can-outline :size="16" />
+                    </button>
                   </td>
                 </tr>
               </tbody>
             </table>
+          </div>
+          <div
+            class="mt-6 flex flex-col items-end lg:flex-row lg:items-center lg:justify-between"
+          >
+            <Pagination :total="50" :perPage="10" />
+            <div class="flex items-center mt-4 lg:mt-0">
+              <span class="text-xs text-gray-600 font-medium mr-6">
+                Mostrando 1 a 8 de 50 registros
+              </span>
+              <div class="w-fit">
+                <select
+                  class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
+                >
+                  <option :value="5">Mostrar 5</option>
+                  <option selected :value="10">Mostrar 10</option>
+                  <option :value="15">Mostrar 15</option>
+                  <option :value="20">Mostrar 20</option>
+                </select>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -205,10 +413,13 @@ import PrimaryButton from "@/components/general/PrimaryButton.vue";
 import SecondaryButton from "@/components/general/SecondaryButton.vue";
 import Navbar from "@/components/general/Navbar.vue";
 import SectionHeader from "@/components/general/SectionHeader.vue";
-
 import Plus from "vue-material-design-icons/Plus.vue";
 import FileDownloadOutline from "vue-material-design-icons/FileDownloadOutline.vue";
+import Pagination from "@/components/general/Pagination.vue";
 import Input from "@/components/general/Input.vue";
+import EyeOutline from "vue-material-design-icons/EyeOutline.vue";
+import PencilOutline from "vue-material-design-icons/PencilOutline.vue";
+import TrashCanOutline from "vue-material-design-icons/TrashCanOutline.vue";
 
 @Options({
   components: {
@@ -220,6 +431,10 @@ import Input from "@/components/general/Input.vue";
     FileDownloadOutline,
     SectionHeader,
     Input,
+    Pagination,
+    EyeOutline,
+    PencilOutline,
+    TrashCanOutline,
   },
 })
 export default class MainView extends Vue {
