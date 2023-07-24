@@ -12,6 +12,11 @@ const routes: Array<RouteRecordRaw> = [
     name: "login",
     component: LoginView,
   },
+  {
+    path: "/:notFound",
+    name: "notFound",
+    component: () => import("../views/NotFoundView.vue"),
+  },
 ];
 
 const router = createRouter({
