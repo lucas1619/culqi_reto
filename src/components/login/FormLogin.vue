@@ -59,6 +59,7 @@ import Swal, { SweetAlertOptions } from "sweetalert2";
 import PrimaryButton from "../general/PrimaryButton.vue";
 
 import Input from "../general/Input.vue";
+import { User } from "@/models/user";
 
 @Options({
   components: {
@@ -82,6 +83,7 @@ export default class FormLogin extends Vue implements FormLoginData {
       setCulqiToken(response.data.token);
       this.store.commit("setUser", response.data.user);
       localStorage.setItem("culqiToken", response.data.token);
+      localStorage.setItem("culqiUser", JSON.stringify(response.data.user));
       this.$router.push({ name: "main" });
     } catch (error) {
       if (error instanceof AxiosError) {
@@ -89,7 +91,7 @@ export default class FormLogin extends Vue implements FormLoginData {
           this.errorMessage = error.response?.data?.message;
         } else {
           this.errorMessage = error.message;
-          this.store.commit("setUser", {
+          const defaultUser: User = {
             id: 1,
             nombre: "Christian Quispe",
             correo: "c.quispe@culqi.com",
@@ -97,7 +99,9 @@ export default class FormLogin extends Vue implements FormLoginData {
             departamento: "IT Team",
             oficina: "Culqi Office",
             estadoCuenta: "Activada",
-          });
+          };
+          this.store.commit("setUser", defaultUser);
+          localStorage.setItem("culqiUser", JSON.stringify(defaultUser));
           localStorage.setItem(
             "culqiToken",
             "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjkwMDc4ODA4LCJleHAiOjE2OTAwODI0MDh9.5MIae7e3YzVzHS6xTdollTisZ5hZx-QNMuk1SlScNSg"

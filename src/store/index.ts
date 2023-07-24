@@ -3,7 +3,9 @@ import { User } from "@/models/user";
 
 export default createStore({
   state: {
-    user: null as User | null,
+    user: localStorage.getItem("culqiUser")
+      ? (JSON.parse(localStorage.getItem("culqiUser") as string) as User)
+      : null,
   },
   getters: {},
   mutations: {
