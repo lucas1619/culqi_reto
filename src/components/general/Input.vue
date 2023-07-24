@@ -1,13 +1,13 @@
 <template>
-  <div class="mb-4">
-    <label :for="id" class="block mb-2 text-sm text-gray-900"
+  <div>
+    <label v-if="label" :for="id" class="block mb-2 text-sm text-gray-900"
       >{{ label
       }}<span class="text-red-400 ml-1" v-if="required">*</span></label
     >
     <input
       :type="type"
       :id="id"
-      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
+      class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
       :placeholder="placeholder"
       :required="required"
       :value="value"
@@ -16,12 +16,13 @@
 </template>
 
 <script lang="ts">
-import { Vue, Options, prop } from "vue-class-component";
+import { Vue, Options, prop, WithDefault } from "vue-class-component";
 
 class Props {
-  label: string = prop({
+  label?: WithDefault<string> = prop({
     type: String,
-    required: true,
+    required: false,
+    default: undefined,
   });
   type: string = prop({
     type: String,
@@ -44,7 +45,7 @@ class Props {
 @Options({})
 
 // create vue component
-export default class LabeledInput extends Vue.with(Props) {
+export default class Input extends Vue.with(Props) {
   value = "";
 }
 </script>

@@ -6,7 +6,7 @@
       <h4 class="text-2xl text-gray-900 font-bold">{{ title }}</h4>
       <p class="text-sm text-gray-600 mt-2">{{ subtitle }}</p>
     </div>
-    <div class="mt-4 lg:mt-0">
+    <div class="mt-4 w-full lg:w-auto lg:mt-0">
       <slot name="right-actions" />
     </div>
   </div>

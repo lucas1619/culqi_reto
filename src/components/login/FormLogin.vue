@@ -14,20 +14,22 @@
       <h1 class="text-2xl font-bold mb-4 text-center text-gray-900">
         Inicia sesión
       </h1>
-      <labeled-input
+      <Input
         label="Correo electrónico"
         type="email"
         placeholder="Ingresa el correo electrónico"
         id="email"
         @input="email = $event.target.value"
+        class="mb-4"
         required
       />
-      <labeled-input
+      <Input
         label="Contraseña"
         type="password"
         placeholder="Ingresa la contraseña"
         id="password"
         @input="password = $event.target.value"
+        class="mb-4"
         required
       />
       <div class="flex text-red-400 text-md mb-4" v-if="errorMessage">
@@ -56,12 +58,12 @@ import { useStore } from "vuex";
 import Swal, { SweetAlertOptions } from "sweetalert2";
 import PrimaryButton from "../general/PrimaryButton.vue";
 
-import LabeledInput from "../general/LabeledInput.vue";
+import Input from "../general/Input.vue";
 
 @Options({
   components: {
     AlertCircleOutline,
-    LabeledInput,
+    Input,
     PrimaryButton,
   },
 })
