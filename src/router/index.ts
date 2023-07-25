@@ -24,4 +24,13 @@ const router = createRouter({
   routes,
 });
 
+//before each
+router.beforeEach((to, from, next) => {
+  const token = localStorage.getItem("culqiToken");
+  const user = localStorage.getItem("culqiUser");
+  const isAuth = token && user;
+  if (to.name !== "login" && !isAuth) next({ name: "login" });
+  else next();
+});
+
 export default router;
